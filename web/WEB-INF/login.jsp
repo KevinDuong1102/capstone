@@ -28,7 +28,7 @@
                 <input id="login_btn" type="submit" value="Log in" size="30" />
                 <br/>
                 <br>
-                <a id="forget_pwd" href=""> Forgot your password?</a>
+                <a id="forget_pwd" href="forgot"> Forgot your password?</a>
                 <br/>
 
 
