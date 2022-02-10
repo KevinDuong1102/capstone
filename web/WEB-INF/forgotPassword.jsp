@@ -38,8 +38,8 @@
             </div>
         </div>
         <form action="reset" method="post">
-            <h2>Forgot Your Password?</h2>
-            <p> Please enter your email address to reset your password. </p>
+            <h2>Find Your Account</h2>
+            <p> Please enter your email address to search for your account. </p>
             Email Address: <input type="email" name="resetEmail" value="" placeholder="Email address"><br>
             <input type="submit" value="Submit">
             <input type="hidden" name ="action" value="reset">

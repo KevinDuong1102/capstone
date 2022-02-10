@@ -36,7 +36,7 @@
                         <div class="topnav-right">
                             <nav>
                                 <ul>
-                                    <li><a href="">Home</a></li>
+                                    <li><a href="welcome">Home</a></li>
                                     <li><a class="drop-down-tab" href="">Appointment <i class="bi bi-caret-down-fill"></i></a>
                                         <ul class="subnav">
                                             <li><a href="">Book Appointment</a></li>
@@ -57,7 +57,7 @@
             <div id="functional_links_welcomePage">
                 <a href="login">Login</a>
                 <a href="signup">Register</a>
-                <a href="">Find Account/Password</a>
+                <a href="forgot">Find Account/Password</a>
                 <div class="clear"></div>
             </div>
             <div id="book_appointment_area_wrapper">
