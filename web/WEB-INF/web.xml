@@ -28,6 +28,10 @@
         <servlet-name>DoctorScheduleServlet</servlet-name>
         <servlet-class>servlets.DoctorScheduleServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AppointmentConfirmationServlet</servlet-name>
+        <servlet-class>servlets.AppointmentConfirmationServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>WelcomeServlet</servlet-name>
         <url-pattern>/welcome</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>DoctorScheduleServlet</servlet-name>
         <url-pattern>/doctorschedule</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AppointmentConfirmationServlet</servlet-name>
+        <url-pattern>/confirmation</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
