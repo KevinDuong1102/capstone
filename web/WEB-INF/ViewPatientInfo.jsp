@@ -3,19 +3,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <style><%@include file="/WEB-INF/forgot.css"%></style>
+
         <style><%@include file="/WEB-INF/styleWelcomePage.css"%></style>
-        <title>Forgot Password Page</title>
+
+        <script src="/WEB-INF/ViewPatientInfo.jsp"></script>
+
+        <title>View Paitnet Information</title>
+        <!-- boot5.0 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style><%@include file="/WEB-INF/styleViewPatientInfo.css"%></style>
     </head>
+
     <body>
         <div class="headers">
             <div class="fixed_position_welcome_page">
@@ -56,7 +56,7 @@
             <div class="p-0 mobileNav">
                 <div class="pe-2 mobileHeader">
                     <a href="welcome"><img src="img/logo.png" width="105"></a>
-                    <a class="pe-4 fs-4" href="forgot">Find Account / Password</a>
+                    <a class="pe-4 fs-4" href="ViewAppointment">Appointment List</a>
                     <a href="login">Login
                         <img
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/
@@ -114,35 +114,68 @@
             </div>
         </div>
 
-        <br/>
-        <div class="bg-img">
-            <div class="bg-img-h1">
-                <p>Find Account / Password</p>
+        <div class="container-fluid ">
+            <div class="bg-img">
+                <div class="bg-img-h1">
+                    <p>Patient Information</p>
+                </div>
+
             </div>
         </div>
-        <div class="accountForm">
-            <form action="forgot" method="post">
-                <h2>Find Your Account</h2>
-                <p> Please enter your personal information to search for your account. </p>
-                <label for="firstName">First name: </label> 
-                <input type="text" id="firstName" name="firstName" value="" placeholder="First name"><br>
-                <label for="lastName">Last name: </label> 
-                <input type="text" id="lastName" name="lastName" value="" placeholder="Last name"><br>
-                <label for="email-accountForm">Email: </label> 
-                <input type="email" id="email-accountForm" name="email-accountForm" value="" placeholder="Email"><br>
-                <input type="submit" value="Submit">
-                <input type="hidden" name ="action" value="forgot">
-            </form>
-        </div>
-        <div class="passwordForm">
-            <form action="forgot" method="post">
-                <h2>Find Your Password</h2>
-                <p> Please enter your email address to find your account. </p>
-                <label for="email">Email Address: </label> 
-                <input type="email" id="email" name="resetEmail" value="" placeholder="Email address"><br>
-                <input type="submit" value="Submit">
-                <input type="hidden" name ="action" value="forgot">
-            </form>
-        </div>
-    </body>
-</html>
+
+        
+            <div class="table-responsive " >
+                <table class="table caption-top  ">
+                    <thead>
+                        <tr>
+                            <th scope="col"> </th>
+                            <th scope="col"> PATIENT ID <img src="img/triangle.png" width =15 height=15></th>
+                            <th scope="col"> FIRST NAME<img src="img/triangle.png" width =15 height=15></th>
+                            <th scope="col"> LAST NAME<img src="img/triangle.png" width =15 height=15></th>
+                            <th scope="col"> EMAIL <img src="img/triangle.png" width =15 height=15></th>
+                            <th scope="col"> MOBILE PHONE <img src="img/triangle.png" width =15 height=15></th>
+                            <th scope="col"> ALT PHONE <img src="img/triangle.png" width =15 height=15></th>
+                            <th scope="col"> MORE <img src="img/triangle.png" width =15 height=15></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-active">
+                        <th> 1 </th>
+                        <td> Eolanda </td>
+                        <td> Kalinowsky </td>
+                        <td> ekalinow... </td>
+                        <td> 4294626495 </td>
+                        <td> 8417722206 </td>
+                        <td> Details <img src="img/information.png" width =15 height=15></td>
+                    </tr>
+                    <tr>
+                        <th> 1 </th>
+                        <td> Eolanda </td>
+                        <td> Kalinowsky </td>
+                        <td> ekalinow... </td>
+                        <td> 4294626495 </td>
+                        <td> 8417722206 </td>
+                        <td> Details <img src="img/information.png" width =15 height=15></td>
+                    </tr>
+                    <tr>
+                        <th> 1 </th>
+                        <td> Eolanda </td>
+                        <td> Kalinowsky </td>
+                        <td> ekalinow... </td>
+                        <td> 4294626495 </td>
+                        <td> 8417722206 </td>
+                        <td> Details <img src="img/information.png" width =15 height=15></td>
+                    </tr>
+                    <tr>
+                        <th> 1 </th>
+                        <td> Eolanda </td>
+                        <td> Kalinowsky </td>
+                        <td> ekalinow... </td>
+                        <td> 4294626495 </td>
+                        <td> 8417722206 </td>
+                        <td> Details <img src="img/information.png" width =15 height=15></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>

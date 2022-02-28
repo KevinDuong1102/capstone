@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
 body{
     font-family: 'Lato', sans-serif;
     background-color: #AEE8FE;
@@ -12,7 +13,7 @@ body{
     box-sizing: content-box;
 }
 a, a:hover{
-    color: black !important;
+    color: black;
     text-decoration: none;
 }
 .headers{
@@ -68,7 +69,6 @@ a, a:hover{
     display: none;
     position:absolute;
     top:88px;
-    padding: 0 0 0 0;
     background-color: #F8F5F8;
     margin-bottom: 0px;
 }
@@ -77,7 +77,6 @@ a, a:hover{
 }
 .topnav-right nav a:hover{
     background-color: grey; 
-    text-decoration: none;
 }
 .topnav-right nav ul li:hover ul{
     display: block;
@@ -107,45 +106,48 @@ a, a:hover{
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
-#book_appointment_area_wrapper{
+
+
+
+
+
+
+
+
+
+.bg-img {
+    background-image: url("img/img03.jpg");
+    margin-top: 15px;
+    min-height: 100px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
-#book_appointment_area{
-    margin:0 15px;
-    margin-top: 19px;
-    height: 600px;
+
+.bg-img-h1{
+    text-align: center;
+    font-size: 40px;
+    line-height: 230%;
 }
-#book_appointment_area img{
-    display: block; 
-    width:100%;
-    height: 100%;
-    opacity: 0.7;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    object-fit: cover;
-    object-position: center 0;
+
+.top_acount_nav {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    top:-34px;
+    list-style: none; 
+    float:left ;  
+
 }
-.book_appointment_field{
-    position: absolute;
-    top: 57%;
-    left: 8%;    
-}
-.book_appointment_field p{
-    border-left: 8px solid #f2cb80;
-    padding-left: 9px;
-}
-.book_appointment_field h1{
-    display: none;
-}
-.book_appointment_btn{
-    height:40px;
-    width:240px;
-    padding:0 10px;
-    background-color: #017c83;
-    color: white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
+
+
+
+
+
+
+
 
 @media screen and (min-width: 576px) {
     #book_appointment_area{

@@ -16,6 +16,18 @@
         <servlet-name>ForgotPassword</servlet-name>
         <servlet-class>servlets.ForgotPassword</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewAppointment</servlet-name>
+        <servlet-class>servlets.ViewAppointment</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookAppointmentServlet</servlet-name>
+        <servlet-class>servlets.BookAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DoctorScheduleServlet</servlet-name>
+        <servlet-class>servlets.DoctorScheduleServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>WelcomeServlet</servlet-name>
         <url-pattern>/welcome</url-pattern>
@@ -31,6 +43,18 @@
     <servlet-mapping>
         <servlet-name>ForgotPassword</servlet-name>
         <url-pattern>/forgot</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewAppointment</servlet-name>
+        <url-pattern>/ViewAppointment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookAppointmentServlet</servlet-name>
+        <url-pattern>/book</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DoctorScheduleServlet</servlet-name>
+        <url-pattern>/doctorschedule</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
